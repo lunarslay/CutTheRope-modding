@@ -1,16 +1,3 @@
-var canvas = document.getElementById("c");
-
-function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}
-
-// Call the resizeCanvas function when the window is resized
-window.addEventListener("resize", resizeCanvas);
-resizeCanvas(); // Call it initially
-
-// Your other JavaScript code for the game goes here
-
 ﻿(function() {function ha(){return function(){}}function ka(ba){return function(ca){this[ba]=ca}}function Da(ba){return function(){return this[ba]}}function Ga(ba){return function(){return ba}}
 (function(){var ba=function(){var a;(function(){var c=!1,d=/var xyz/.test(ha())?/\b_super\b/:/.*/;a=ha();a.extend=function(b){function f(){!c&&this.init&&this.init.apply(this,arguments)}var a=this.prototype;c=!0;var g=new this;c=!1;for(var k in b)g[k]="function"==typeof b[k]&&"function"==typeof a[k]&&d.test(b[k])?function(b,f){return function(){var c=this.h;this.h=a[b];var d=f.apply(this,arguments);this.h=c;return d}}(k,b[k]):b[k];f.prototype=g;f.extend=arguments.callee;return f}})();return a}(),
 ca=function(){function a(a,d,b,f){this.F=a;this.K=d;this.J=b;this.B=f}a.prototype.fi=function(){return"rgba("+(255*this.F>>0)+","+(255*this.K>>0)+","+(255*this.J>>0)+","+this.B.toFixed(2)+")"};a.prototype.rj=function(a){return this.F===a.F&&this.K===a.K&&this.J===a.J&&this.B===a.B};a.prototype.copy=function(){return new a(this.F,this.K,this.J,this.B)};a.prototype.qa=function(a){this.F=a.F;this.K=a.K;this.J=a.J;this.B=a.B};a.prototype.add=function(a){this.F+=a.F;this.K+=a.K;this.J+=a.J;this.B+=a.B};
